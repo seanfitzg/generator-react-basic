@@ -2,11 +2,11 @@
   "name": "generator-react-basic",
   "version": "1.0.0",
   "description": "Very basic React project with Browserify, Babel and Gulp",
-  "homepage": "",
+  "homepage": "https://github.com/seanfitzg/generator-react-basic",
   "author": {
     "name": "Sean Fitzgerald",
     "email": "seanfitzg@gmail.com",
-    "url": ""
+    "url": "https://github.com/seanfitzg"
   },
   "files": [
     "generators"
