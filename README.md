@@ -1,4 +1,5 @@
-# generator-react-basic [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-react-basic [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url] 
+
 > Very basic React project with Browseriify, Babel and Gulp
 
 ## Installation
