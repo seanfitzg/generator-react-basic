@@ -22,7 +22,7 @@ Then run the project:
 gulp
 ```
 
-Put your jsx into the src\app.jsx file.  Any changes are watched, resulting in a compile, bundle and page refresh.  Nice.
+Put your jsx into the src\app.jsx file.  Any changes are watched, resulting in a compile, bundle and page refresh.  Simple.
 
 ## Getting To Know Yeoman
 
