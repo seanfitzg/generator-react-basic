@@ -1,4 +1,5 @@
-# generator-react-basic [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-react-basic [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url] 
+
 > Very basic React project with Browseriify, Babel and Gulp
 
 ## Installation
@@ -15,6 +16,13 @@ Then generate your new project:
 ```bash
 yo react-basic
 ```
+Then run the project:
+
+```bash
+gulp
+```
+
+Put your jsx into the src\app.jsx file.  Any changes are watched, resulting in a compile, bundle and page refresh.  Simple.
 
 ## Getting To Know Yeoman
 
@@ -22,7 +30,7 @@ Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he
 
 ## License
 
-MIT © [Sean Fitzgerald]()
+MIT © [Sean Fitzgerald](https://github.com/seanfitzg)
 
 
 [npm-image]: https://badge.fury.io/js/generator-react-basic.svg
