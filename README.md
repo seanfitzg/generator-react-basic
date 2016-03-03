@@ -16,6 +16,13 @@ Then generate your new project:
 ```bash
 yo react-basic
 ```
+Then run the project:
+
+```bash
+gulp
+```
+
+Put your jsx into the src\app.jsx file.  Any changes are watched, resulting in a compile, bundle and page refresh.  Nice.
 
 ## Getting To Know Yeoman
 
