@@ -23,9 +23,13 @@
     "yeoman-generator": "^0.22.5",
     "yosay": "^1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "yeoman-assert": "^2.1.1",
+    "yeoman-test": "^1.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
