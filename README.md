@@ -14,6 +14,8 @@ npm install -g generator-react-basic
 Then generate your new project:
 
 ```bash
+mkdir project-name
+cd project-name
 yo react-basic
 ```
 Then run the project:
