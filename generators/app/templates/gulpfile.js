@@ -9,7 +9,7 @@ var gutil = require('gulp-util');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('webserver', function() {
+gulp.task('webserver', ['bundle'], function() {
     gulp.src('./')
         .pipe(webserver({
             livereload: true,
@@ -27,7 +27,7 @@ gulp.task('compile', function() {
 });
 
 
-gulp.task('bundle', function() {
+gulp.task('bundle', ['compile'], function() {
     // set up the browserify instance on a task basis
     var b =
         browserify({
@@ -47,8 +47,8 @@ gulp.task('bundle', function() {
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', ['webserver'], function() {
     gulp.watch(['*.*', './src/**'], ['compile', 'bundle']);
 });
 
-gulp.task('default', ['compile', 'bundle', 'webserver', 'watch']);
+gulp.task('default', ['watch']);
