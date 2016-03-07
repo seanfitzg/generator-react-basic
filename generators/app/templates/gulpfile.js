@@ -9,6 +9,10 @@ var gutil = require('gulp-util');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
+gulp.task('watch', ['webserver'], function() {
+    gulp.watch(['*.*', './src/**'], ['bundle']);
+});
+
 gulp.task('webserver', ['bundle'], function() {
     gulp.src('./')
         .pipe(webserver({
@@ -17,15 +21,6 @@ gulp.task('webserver', ['bundle'], function() {
             open: 'index.html'
         }));
 });
-
-gulp.task('compile', function() {
-    gulp.src('src/app.jsx')
-        .pipe(babel({
-            presets: ['es2015', 'react']
-        }))
-        .pipe(gulp.dest('dist'))
-});
-
 
 gulp.task('bundle', ['compile'], function() {
     // set up the browserify instance on a task basis
@@ -47,8 +42,14 @@ gulp.task('bundle', ['compile'], function() {
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('watch', ['webserver'], function() {
-    gulp.watch(['*.*', './src/**'], ['compile', 'bundle']);
+gulp.task('compile', function() {
+    gulp.src('src/app.jsx')
+        .pipe(babel({
+            presets: ['es2015', 'react']
+        }))
+        .pipe(gulp.dest('dist'))
 });
 
+
+// Order of tasks is : compile -> bundle -> webserver -> watch.
 gulp.task('default', ['watch']);
