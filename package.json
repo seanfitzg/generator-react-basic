@@ -1,6 +1,6 @@
 {
   "name": "generator-react-basic",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "description": "Very basic React project with Browserify, Babel and Gulp",
   "homepage": "https://github.com/seanfitzg/generator-react-basic#readme",
   "author": {
